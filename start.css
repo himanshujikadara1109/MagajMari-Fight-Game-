@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Background Video */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover entire screen */
+    z-index: -1;
+    opacity: 0.45;
+    
+}
+
+/* Play Button */
+#btn {
+    font-weight: bolder;
+    font-size: 56px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    top: 44%;
+    left: 38%;
+    backdrop-filter: blur(8px); /* Adjust blur intensity */
+    background: rgba(94, 90, 90, 0.3); /* Semi-transparent overlay */
+    border: 5px solid #000;
+    border-radius: 10px;
+    padding: 2% 2%;
+    /* Text shadow without hover */
+    text-shadow: 4px 4px 6px rgba(199, 27, 27, 0.8);
+}
+
+#btn:hover {
+    color: rgba(225, 117, 16, 0.8);
+    font-size: 56px;
+    /* Enhanced text shadow on hover */
+    text-shadow: 6px 6px 10px rgba(255, 255, 255, 0.8);
+}

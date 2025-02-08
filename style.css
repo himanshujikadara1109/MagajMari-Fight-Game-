@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.class {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.class #le {
+    text-decoration: none;
+    color: #551a88;
+}
+
+.class #re {
+    text-decoration: none;
+    color: #551a88;
+}
